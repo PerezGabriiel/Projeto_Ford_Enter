@@ -6,18 +6,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="cabecalho__logoePerfil">
-        <a id="perfil__splash" >Loggin | Cadastre-se</a>
+    <header>
+        <a id="perfil">Loggin | Cadastre-se</a>
+        <a id="link" href="sobre_ford.html" target="_blank">Sobre a Ford</a>
 
-        <nav class="menu">
-            <a id="logo">Monte se Casamento</a>"
-            <a href="sobre_ford.html" target="_blank">Sobre a Ford</a>
+        <nav>
+            <a id="logo">Monte seu Casamento</a>
+            
         </nav>
         
     </header> <! -- Segundo comentário -- >
 
-    <main>
-        <section class="botoes_splash">
+    <main class="botoes">
+        <section>
             <form action="url" method="POST" id="formCasamento">               
                 <label for="cidade">Cidade:</label>
                 <select name="cidade" id="cidade" required>
@@ -34,7 +35,7 @@
                     <option value="noivo">Noivo</option>
                     <option value="noiva">Noiva</option>
                 </select>
-                <button type="submit" id="btnEnviar" style="display:none;">Aplicar</button>
+                <button id="botao">Aplicar</button>
             </form>
         </section>
     </main>
