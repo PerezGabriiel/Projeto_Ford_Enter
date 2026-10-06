@@ -1,0 +1,42 @@
+* {
+    margin: 10;
+    padding: 10;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(255, 244, 230);
+    color:rgb(50, 37, 10)
+}
+
+.perfil {
+    display: flex;
+    container: initial;
+    border-radius: 6%;
+    background-color: rgb(253, 223, 183);
+    justify-content: end;
+    margin-top: 1%;
+}
+
+#logo {
+    display: flex;
+    font-size: xx-large;
+    color: rgb(50, 37, 10);
+    justify-content: center;
+    margin: 2%;
+}
+
+#coluna {
+    justify-content: space-between;
+    display: grid;
+    grid-column: initial;
+    grid-auto-columns: 95px;
+    margin: 0%;
+    font-weight: 12px;
+    transition: background-color 0.3s;
+}
+
+#div1 {
+    display: flex;
+    flex-flow: column;
+}

@@ -6,16 +6,19 @@
 body {
     font-family: 'Times New Roman', Times, serif;
     background-color: rgb(255, 244, 230);
-    color:rgb(50, 37, 10)
+    color:rgb(50, 37, 10);
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSQQ1FQUpHgLFJAUvseR0S9vr9Mz_gBVz82QRl6_cg8g&s=10");
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-#perfil {
+.perfil {
     display: flex;
     container: initial;
     border-radius: 6%;
     background-color: rgb(253, 223, 183);
     justify-content: end;
-    margin-top: 2%;
+    margin-top: 1%;
 }
 
 .botoes {
@@ -48,4 +51,4 @@ body {
     justify-content: center;
 }
 
-
+img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSQQ1FQUpHgLFJAUvseR0S9vr9Mz_gBVz82QRl6_cg8g&s=10
