@@ -36,7 +36,64 @@ body {
     transition: background-color 0.3s;
 }
 
-#div1 {
+#rodape {
+    border-radius: solid 6%;
+    background-color: rgb(50, 37, 10);
+    color: rgb(255, 244, 230);
     display: flex;
-    flex-flow: column;
+    justify-content: space-around;
+    list-style: none;
+    height: 40px;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin: 7%;
+}
+
+#div1 ul {
+  display: flex;
+  flex-direction: column; 
+  gap: 15px;              
+  padding: 0;             
+  list-style: none;    
+}
+
+#div2 ul {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  gap: 15px;              
+  padding: 0;             
+  list-style: none;
+}
+
+#div2 button {
+    width: 150px;
+    height: 40px;
+}
+
+#div1 button {
+    width: 150px;
+    height: 40px;
+}
+
+#div3 ul {
+  display: grid;
+  grid-template-columns: repeat(2, 5fr); 
+  gap: 10px;                            
+  padding: 0;
+  list-style: none; 
+  width: 100%;            
+  max-width: 400px;    
+  margin-top: 20px;                       
+}
+
+#div3 ul li {
+  background-color: rgb(50, 37, 10);
+  height: 300px;
+  width: 400px;         
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  grid-template-rows: 5px;
 }
