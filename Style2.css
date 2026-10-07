@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Sans:wght@400;500;700&display=swap");
+
+/* ---------- Paleta e tipografia ---------- */
+:root {
+    --porcelana: #fbf9fa;
+    --ameixa: #3b1f3f;
+    --ameixa-clara: #5a3a5e;
+    --rosa-quartzo: #e9bfca;
+    --rosa-fundo: #f6e6ea;
+    --salvia: #7c9a85;
+    --linha: #e4d6da;
+
+    --fonte-titulo: "Cormorant Garamond", Georgia, serif;
+    --fonte-corpo: "DM Sans", system-ui, sans-serif;
+}
+
+/* ---------- Base ---------- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--porcelana);
+    color: var(--ameixa);
+    font-family: var(--fonte-corpo);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    margin: 0;
+    font-family: var(--fonte-titulo);
+    font-weight: 600;
+}
+
+/* ---------- Cabeçalho ---------- */
+header {
+    position: relative;
+    padding: 4.5rem 1.5rem 2.5rem;
+    text-align: center;
+    background: var(--rosa-fundo);
+    border-bottom: 1px solid var(--linha);
+}
+
+.perfil {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.5rem;
+    padding: 0.5rem 1.1rem;
+    border: 1px solid var(--ameixa);
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--ameixa);
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.perfil:hover {
+    background: var(--ameixa);
+    color: var(--porcelana);
+}
+
+#logo {
+    font-family: var(--fonte-titulo);
+    font-style: italic;
+    font-weight: 500;
+    font-size: clamp(2.5rem, 7vw, 4.5rem);
+    line-height: 1.05;
+    letter-spacing: 0.01em;
+    color: var(--ameixa);
+}
+
+/* ---------- Barras de filtro ---------- */
+#div1,
+#div2 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.5rem;
+    width: min(100% - 3rem, 62rem);
+    margin-inline: auto;
+    padding: 1.25rem 0;
+    border-bottom: 1px solid var(--linha);
+}
+
+#div2 {
+    margin-top: 1.5rem;
+}
+
+.filtro,
+.filtro__2 {
+    min-width: 6rem;
+    font-size: 1.5rem;
+}
+
+.filtro__2 {
+    color: var(--ameixa-clara);
+}
+
+#div1 ul,
+#div2 ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+/* ---------- Botões (base) ---------- */
+button {
+    font-family: var(--fonte-corpo);
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 0.55rem 1.2rem;
+    border: 1px solid var(--ameixa);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--ameixa);
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+button:hover {
+    background: var(--ameixa);
+    color: var(--porcelana);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+button:focus-visible,
+.perfil:focus-visible {
+    outline: 3px solid var(--salvia);
+    outline-offset: 3px;
+}
+
+/* Filtros de ordenação: visual mais discreto que as categorias */
+.button__avaliacoes {
+    border-color: var(--rosa-quartzo);
+    background: var(--rosa-fundo);
+}
+
+.button__avaliacoes:hover {
+    background: var(--ameixa-clara);
+    border-color: var(--ameixa-clara);
+}
+
+/* ---------- Demonstração das melhores avaliações ---------- */
+#div3 {
+    flex: 1;
+    width: min(100% - 3rem, 62rem);
+    margin: 2.5rem auto;
+}
+
+.demonstracao__avaliacoes {
+    margin-bottom: 1.5rem;
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    line-height: 1.15;
+}
+
+#div3 ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    gap: 1rem;
+}
+
+/* Cada categoria vira um bloco grande; a cor muda por categoria */
+#div3 button {
+    width: 100%;
+    min-height: 9rem;
+    display: flex;
+    align-items: flex-end;
+    padding: 1.1rem;
+    border: none;
+    border-radius: 0.75rem;
+    font-family: var(--fonte-titulo);
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: left;
+    background: var(--rosa-fundo);
+    color: var(--ameixa);
+    transition: background 0.25s, color 0.25s;
+}
+
+#div3 .button__lugares {
+    background: var(--rosa-quartzo);
+}
+
+#div3 .button__buffet {
+    background: var(--rosa-fundo);
+}
+
+#div3 .button__Atelier {
+    background: #dfe8e1;
+}
+
+#div3 .button__fotografos {
+    background: tomate;
+}
+
+#div3 button:hover {
+    background: var(--ameixa);
+    color: var(--porcelana);
+}
+
+/* ---------- Rodapé ---------- */
+#rodape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem 2rem;
+    padding: 1.75rem 1.5rem;
+    background: var(--ameixa);
+    color: ;
+    font-size: 0.9rem;
+}
+
+#rodape li {
+    list-style: none;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+#rodape li:hover {
+    color: #7c9a85;
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 600px) {
+    header {
+        padding-top: 5rem;
+    }
+
+    .perfil {
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+        white-space: nowrap;
+    }
+
+    #div1,
+    #div2 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+    }
+}

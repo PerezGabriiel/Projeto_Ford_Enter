@@ -1,0 +1,49 @@
+<!DOCTYPE html> <!-- primeiro comentário -->
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleHome.css">
+    <title>Monte seu Casamento</title>
+</head>
+
+<body>
+    <header>
+        <a class="perfil">Login | Cadastra-se</a>
+        <a class="link" href="sobre_ford.html" target="_blank">Sobre a Ford</a>
+        <a class="link" href="index2.html" target="_blank">Próxima</a>
+
+        <nav>
+            <a id="logo1">Monte seu Casamento</a>
+        </nav>
+
+    </header>
+
+    <main class="botoes">
+        <section>
+            <form action="url" method="POST" id="formCasamento">
+                <label for="cidade">Cidade:</label>
+                <select name="cidade" id="cidade" required>
+                    <option value="">Selecione a cidade</option>
+                    <option value="sao_paulo">São Paulo</option>
+                    <option value="rio_de_janeiro">Rio de Janeiro</option>
+                    <option value="belo_horizonte">Belo Horizonte</option>
+                </select>
+                <label for="data_casamento">Data do Casamento:</label>
+                <input type="date" name="data_casamento" id="data_casamento" required>
+                <label for="noivo_noiva">Noivo(a):</label>
+                <select name="noivo_noiva" id="noivo_noiva" required>
+                    <option value="">Selecione</option>
+                    <option value="noivo">Noivo</option>
+                    <option value="noiva">Noiva</option>
+                </select>
+            </form>
+        </section>
+        <div id="botao"></div>
+        <button>Aplicar</button>
+        </div>
+    </main>
+</body>
+
+</html>
